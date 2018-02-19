@@ -14,7 +14,8 @@ import retrofit2.http.Path;
 public interface IApiHelper {
 
     Observable<List<ParkingsModel>> getParkingLocations();
-    Observable<ParkingsModel> getLocationDetails(@Path("id") int id);
+    Observable<List<ParkingsModel>> getLocationDetails();
+    Observable<ParkingsModel>  postReserveLocation(@Path("id") int id);
 
 
 }

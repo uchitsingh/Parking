@@ -25,8 +25,13 @@ public class AppDataManager implements IDataManager {
     }
 
     @Override
-    public Observable<ParkingsModel> getLocationDetails(int id) {
-        return iApiHelper.getLocationDetails(id);
+    public Observable<List<ParkingsModel>> getLocationDetails() {
+        return iApiHelper.getLocationDetails();
+    }
+
+    @Override
+    public Observable<ParkingsModel> postReserveLocation(int id) {
+        return iApiHelper.postReserveLocation(id);
     }
 
 

@@ -22,7 +22,7 @@ public interface IRequestInterface {
     Observable<List<ParkingsModel>> getParkingLocations();
 
     @GET(ApiList.LOCATION_DETAILS_LIST)
-    Observable<ParkingsModel> getLocationDetails(@Path("id") int id);
+    Observable<List<ParkingsModel>> getLocationDetails();
 
     @POST(ApiList.RESERVE_LOCATION)
     Observable<ParkingsModel>  postReserveLocation(@Path("id") int id);

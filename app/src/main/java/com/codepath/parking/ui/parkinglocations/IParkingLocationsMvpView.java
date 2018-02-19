@@ -1,4 +1,4 @@
-package com.codepath.parking.parkinglocations;
+package com.codepath.parking.ui.parkinglocations;
 
 import com.codepath.parking.data.network.model.parkinglocations.ParkingsModel;
 import com.codepath.parking.ui.base.MvpView;
@@ -12,6 +12,7 @@ import java.util.List;
 public interface IParkingLocationsMvpView extends MvpView {
     void onFetchDataProgress();
     void onFetchDataSuccess(List<ParkingsModel> parkingsModelList);
+    void onFetchDataSucces(ParkingsModel parkingModel);
     void onFetchDataError(String error);
 
 
